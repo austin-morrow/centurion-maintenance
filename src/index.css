@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    :root {
+        --primary-blue: #395664;
+        --primary-white: #F7F6EF;
+        --secondary-orange: #CB7752;
+    }
+
+    li {
+        @apply p-4
+    }
+
+}
