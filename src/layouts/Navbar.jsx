@@ -12,11 +12,11 @@ const Navbar = () => {
       <div className='px-2 flex justify-between items-center w-full h-full'>
         <div className='flex items-center'>
           <Link to='/'><img className='h-[250px] pl-10 lg:h-[300px]' src={logo} alt='Logo' /></Link>
-          {/*<h1 className='text-3xl font-bold mr-4 sm:text-4xl'>BRAND.</h1>*/}
         </div>
           <ul className='pr-10 hidden md:flex text-xl text-[var(--primary-white)]'>
             <NavLink to='/'><li>HOME</li></NavLink>
             <NavLink to='about'><li>ABOUT</li></NavLink>
+            <NavLink to='services'><li>SERVICES</li></NavLink>
             <NavLink to='projects'><li>PROJECTS</li></NavLink>
             <NavLink to='contact'><li>CONTACT</li></NavLink>
           </ul>
