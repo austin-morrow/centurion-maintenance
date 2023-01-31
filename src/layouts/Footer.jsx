@@ -1,23 +1,25 @@
 import logo from '../assets/brand/cm-logo.png';
 import {Link} from "react-router-dom";
 import React from "react";
+import { MdOutlineEmail, MdPhone, MdOutlineLocationOn } from "react-icons/md";
+
 
 const Footer = () => {
 
   return (
     <div className='w-full mt-24 bg-slate-900 text-gray-300 py-y px-2'>
-      <div className='max-w[1240px] mx-auto grid grid-cols-2 md:grid-cols-3 border-b-2 border-gray-600 py-8'>
+      <div className='max-w[1240px] items-center mx-auto grid grid-cols-2 md:grid-cols-3 border-b-2 border-gray-600 py-8'>
         <div>
           <Link to='/'><img className='h-[200px] pl-10 lg:h-[200px]' src={logo} alt='Logo'/></Link>
         </div>
         <div>
           <ul>
-            <li>Email</li>
-            <li>Phone</li>
+           <li><MdOutlineEmail />centurion.maintenance03@gmail.com</li>
+            <li><MdPhone />720-394-5506</li>
           </ul>
         </div>
         <div>
-          <div>Address</div>
+          <div><MdOutlineLocationOn />268 Dogwood Ln. Hoschton, GA 30548</div>
         </div>
       </div>
 
