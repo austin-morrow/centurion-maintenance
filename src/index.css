@@ -14,3 +14,15 @@
     }
 
 }
+
+.coverImg {
+    height: 100vh;
+    background: url(./assets/images/coverImg.jpg) no-repeat center/
+cover;
+}
+
+.woodMillingImg {
+    height: 35vh;
+    background: url(assets/images/woodmilling.jpg) no-repeat center/
+cover;
+}

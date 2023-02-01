@@ -1,8 +1,14 @@
+import Logo from '../assets/brand/cm-logo.png';
+
 export default function Home() {
   return (
-    <div>
-      <h2>Home</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto atque blanditiis culpa cupiditate delectus deleniti dolor ea earum eos facilis harum, iste molestiae molestias nihil perspiciatis, porro provident quaerat quis quod vitae voluptate voluptatem voluptatibus! Ab architecto aspernatur at consectetur, ducimus exercitationem in magni mollitia nam, nostrum ratione sint.</p>
-    </div>
+    <>
+      <section name='home' className='coverImg'>
+        {/* Logo */}
+        <div className='max-w-[700px] 2xl:max-w-[600px] mx-auto px-20 pt-20 flex flex-col justify-center h-full'>
+          <img src={Logo} alt='logo' />
+        </div>
+      </section>
+    </>
   )
 }
