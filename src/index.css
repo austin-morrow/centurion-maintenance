@@ -22,7 +22,13 @@ cover;
 }
 
 .woodMillingImg {
-    height: 35vh;
+    height: 49vh;
     background: url(assets/images/woodmilling.jpg) no-repeat center/
+cover;
+}
+
+.residentialImg {
+    height: 49vh;
+    background: url(assets/images/residential.jpg) no-repeat center/
 cover;
 }

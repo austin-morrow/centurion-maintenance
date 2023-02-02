@@ -5,7 +5,7 @@ import Navbar from './layouts/Navbar';
 import Home from '../src/pages/Home';
 import About from '../src/pages/About';
 import WoodMilling from './pages/WoodMilling';
-import Projects from '../src/pages/Projects';
+import Residential from './pages/Residential';
 import Contact from '../src/pages/Contact';
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='about' element={<About />} />
           <Route path='woodmilling' element={<WoodMilling />} />
-          <Route path='projects' element={<Projects />} />
+          <Route path='residential' element={<Residential />} />
           <Route path='contact' element={<Contact />} />
         </Routes>
       </main>
