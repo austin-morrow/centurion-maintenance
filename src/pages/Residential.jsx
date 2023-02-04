@@ -6,9 +6,9 @@ export default function Residential() {
         <div className='text-white'>Residential</div>
       </div>
       </section>
-      <div className='columns-3'>
-        <div>
-          Our services
+      <div className='columns-3 pt-10'>
+        <div className='flex justify-center text-2xl'>
+          OUR SERVICES
         </div>
         <div>
           <ul>
@@ -20,10 +20,6 @@ export default function Residential() {
             <li>Deck Building</li>
             <li>Deck Repair</li>
             <li>Dock Design & Construction</li>
-          </ul>
-        </div>
-        <div>
-          <ul>
             <li>Consultations</li>
             <li>Drawing Services</li>
             <li>Finishing</li>

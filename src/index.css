@@ -9,9 +9,6 @@
         --secondary-orange: #CB7752;
     }
 
-    li {
-        @apply p-4
-    }
 
 }
 
