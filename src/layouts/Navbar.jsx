@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import {MenuIcon, XIcon} from '@heroicons/react/outline';
 
 const Navbar = () => {

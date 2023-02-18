@@ -1,8 +1,26 @@
-export default function About() {
+import React from "react";
+
+const About = () => {
   return (
-    <div>
-      <h2>About us</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto atque blanditiis culpa cupiditate delectus deleniti dolor ea earum eos facilis harum, iste molestiae molestias nihil perspiciatis, porro provident quaerat quis quod vitae voluptate voluptatem voluptatibus! Ab architecto aspernatur at consectetur, ducimus exercitationem in magni mollitia nam, nostrum ratione sint.</p>
-    </div>
+    <>
+      <div className='bg-black'>
+        <div>
+          <div className='text-white text-3xl absolute left-1/4 bottom-5'>Residential</div>
+        </div>
+      </div>
+
+      <div className="bg-lightblue py-20 px-4 mt-8">
+        <div className="mx-auto max-w-6xl flex flex-col md:flex-row">
+          <h2 className="mr-8 w-full md:w-1/3 text-3xl font-extrabold leading-9">
+          About Us
+          </h2>
+
+        </div>
+      </div>
+
+    </>
+
   )
 }
+
+export default About

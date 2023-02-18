@@ -9,28 +9,28 @@ import { MdOutlineEmail, MdPhone, MdOutlineLocationOn } from "react-icons/md";
 const Footer = () => {
 
   return (
-    <div className='w-full mt-24 bg-slate-900 text-gray-300 py-y px-2'>
+    <div className='w-full mt-24 bg-slate-900 text-gray-300 px-2'>
       <div className='max-w[1240px] items-center mx-auto grid grid-cols-2 md:grid-cols-3 border-b-2 border-gray-600 py-8'>
 
         <div>
-          <Link to='/'><img className='h-[200px] pl-10 lg:h-[200px]' src={logo} alt='Logo'/></Link>
+          <Link to='/'><img className='h-[175px] pl-10 lg:h-[175px]' src={logo} alt='Logo'/></Link>
         </div>
 
 
         <div className="mt-1 flex flex-col sm:mt-0 sm:flex-column sm:flex-wrap sm:space-x-6">
-          <div className="mt-2 flex items-center text-lg text-gray-500">
+          <div className="mt-2 flex items-center text-lg text-gray-500 gap-4">
             <MdOutlineEmail />
             centurion.maintenance03@gmail.com
           </div>
 
-          <div className="mt-2 flex items-center text-lg text-gray-500">
+          <div className="mt-2 flex items-center text-lg text-gray-500 gap-4">
             <MdPhone />
             720-394-5506
           </div>
         </div>
 
         <div className="mt-1 flex flex-col sm:mt-0 sm:flex-row sm:flex-wrap sm:space-x-6">
-          <div className="mt-2 flex items-center text-lg text-gray-500">
+          <div className="mt-2 flex items-center text-lg text-gray-500 gap-4">
             <MdOutlineLocationOn />
           268 Dogwood Ln. Hoschton, GA 30548
           </div>

@@ -1,83 +1,54 @@
-// export default function Residential() {
-//   return (
-//     <>
-//       <section name='home' className='residentialImg'>
-//       <div>
-//         <div className='text-white'>Residential</div>
-//       </div>
-//       </section>
-//       <div className='columns-3 pt-10'>
-//         <div className='flex justify-center text-2xl'>
-//           OUR SERVICES
-//         </div>
-//         <div>
-//           <ul>
-//             <li>Accessory Dwelling Units</li>
-//             <li>Additions</li>
-//             <li>Attic Restoration</li>
-//             <li>Basement Remodeling</li>
-//             <li>Bathroom Remodeling</li>
-//             <li>Deck Building</li>
-//             <li>Deck Repair</li>
-//             <li>Dock Design & Construction</li>
-//             <li>Consultations</li>
-//             <li>Drawing Services</li>
-//             <li>Finishing</li>
-//             <li>Finishing Selections</li>
-//             <li>Permitting</li>
-//             <li>Product Selection & Sourcing</li>
-//           </ul>
-//         </div>
-//       </div>
-//
-//     </>
-//   )
-// }
-
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Residential = () => {
   return (
-<>
-    <section name='home' className='residentialImg'>
-            <div>
-               <div className='text-white'>Residential</div>
-             </div>
-             </section>
-
-    <div className="bg-lightblue py-20 px-4 mt-8">
-      <div className="mx-auto max-w-6xl flex flex-col md:flex-row">
-        <h2 className="mr-8 w-full md:w-1/3 text-3xl font-extrabold leading-9">
-          Our Services
-        </h2>
-        <dl className="w-full md:w-2/3">
-          <div>
-            <ul>
-              <li>Accessory Dwelling Units</li>
-              <li>Additions</li>
-              <li>Attic Restoration</li>
-              <li>Basement Remodeling</li>
-              <li>Bathroom Remodeling</li>
-              <li>Deck Building</li>
-              <li>Deck Repair</li>
-              <li>Dock Design & Construction</li>
-              <li>Consultations</li>
-              <li>Drawing Services</li>
-              <li>Finishing</li>
-              <li>Finishing Selections</li>
-              <li>Permitting</li>
-              <li>Product Selection & Sourcing</li>
-            </ul>
-          </div>
-
-
-
-
-        </dl>
+    <>
+      <div name='home' className='residentialImg relative'>
+        <div>
+          <div className='text-white text-3xl absolute left-1/4 bottom-5'>Residential</div>
+        </div>
       </div>
-    </div>
 
-</>
+      <div className=" py-20 px-4 mt-8">
+        <div className="mx-auto max-w-6xl flex flex-col md:flex-row">
+          <h2 className="mr-8 w-full md:w-1/3 text-3xl font-extrabold leading-9">
+            Our Services
+          </h2>
+          <dl className="w-full md:w-2/3">
+            <div>
+              <ul className='list-disc'>
+                <li>Accessory Dwelling Units</li>
+                <li>Additions</li>
+                <li>Attic Restoration</li>
+                <li>Basement Remodeling</li>
+                <li>Bathroom Remodeling</li>
+                <li>Deck Building</li>
+                <li>Deck Repair</li>
+                <li>Dock Design & Construction</li>
+                <li>Consultations</li>
+                <li>Drawing Services</li>
+                <li>Finishing</li>
+                <li>Finishing Selections</li>
+                <li>Permitting</li>
+                <li>Product Selection & Sourcing</li>
+              </ul>
+            </div>
+          </dl>
+        </div>
+
+        <span className="sm:ml-3 flex justify-center pt-20">
+          <Link to="/contact"><button
+            type="button"
+
+            className="inline-flex items-center rounded-md border border-transparent bg-slate-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2"
+          >
+            Contact for more information
+          </button></Link>
+        </span>
+      </div>
+
+    </>
 
   )
 }
