@@ -18,6 +18,17 @@ module.exports = {
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
     },
+
+    borderRadius: {
+      'none': '0',
+      'sm': '0.125rem',
+      DEFAULT: '0.25rem',
+      DEFAULT: '4px',
+      'md': '0.375rem',
+      'lg': '1.5rem',
+      'full': '9999px',
+      'large': '12px',
+    }
   },
   plugins: [
     require('@tailwindcss/forms'),

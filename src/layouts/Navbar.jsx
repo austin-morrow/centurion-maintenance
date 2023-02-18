@@ -7,9 +7,9 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav)
 
   return (
-    <div className='fixed w-full h-[80px] z-10 fixed drop-shadow-lg'>
+    <div className='fixed w-full h-[80px] z-10 fixed bg-[#e8e8e8] text-black bg-opacity-30 z-10'>
       <div className='px-2 flex justify-center items-center w-full h-full'>
-          <ul className='hidden md:flex text-xl text-[white]'>
+          <ul className='hidden md:flex text-xl text-[black]'>
             <NavLink to='/'><li className='px-12'>Home</li></NavLink>
             <NavLink to='woodmilling'><li className='px-12'>Wood Milling</li></NavLink>
             <NavLink to='residential'><li className='px-12'>Residential</li></NavLink>
