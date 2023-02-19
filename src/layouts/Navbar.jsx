@@ -12,7 +12,6 @@ const Navbar = () => {
           <ul className='hidden md:flex text-xl text-[black]'>
             <NavLink to='/'><li className='px-12'>Home</li></NavLink>
             <NavLink to='woodmilling'><li className='px-12'>Wood Milling</li></NavLink>
-            <NavLink to='residential'><li className='px-12'>Residential</li></NavLink>
             <NavLink to='about'><li className='px-12'>About</li></NavLink>
             <NavLink to='contact'><li className='px-12'>Contact</li></NavLink>
           </ul>
@@ -25,7 +24,6 @@ const Navbar = () => {
       <ul className={!nav ? 'hidden' : 'absolute absolute bg-white w-full px-8'}>
         <NavLink to='/'><li className='border-b-2 border-zinc-300 w-full'>Home</li></NavLink>
         <NavLink to='woodmilling'><li className='border-b-2 border-zinc-300 w-full'>Wood Milling</li></NavLink>
-        <NavLink to='residential'><li className='border-b-2 border-zinc-300 w-full'>Residential</li></NavLink>
         <NavLink to='about'><li className='border-b-2 border-zinc-300 w-full'>About</li></NavLink>
         <NavLink to='contact'><li className='border-b-2 border-zinc-300 w-full'>Contact</li></NavLink>
       </ul>
