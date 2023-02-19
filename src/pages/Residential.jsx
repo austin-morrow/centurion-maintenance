@@ -9,7 +9,7 @@ const Residential = () => {
       </div>
 
       <div className=" py-100 px-4 mt-8">
-        <div className='text-3xl pb-10 flex justify-center'>Residential</div>
+        <div className='text-3xl font-bold mb-16 flex justify-center'>Residential</div>
         <div className="mx-auto max-w-6xl flex flex-col md:flex-row">
           <h2 className="mr-8 w-full md:w-1/3 text-3xl font-extrabold leading-9">
             Our Services

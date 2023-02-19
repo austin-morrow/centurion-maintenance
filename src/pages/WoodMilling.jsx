@@ -7,12 +7,12 @@ import {Link} from "react-router-dom";
 export default function WoodMilling() {
   return (
     <>
-      <div name='home' className='woodMillingImg mb-16 relative'>
+      <div name='home' className='woodMillingImg relative'>
 
       </div>
 
-      <div className='flex flex-col justify-center items-center w-full h-full'>
-        <div className='text-3xl pb-10'>Wood Milling</div>
+      <div className='mt-8 flex flex-col justify-center items-center w-full h-full'>
+        <div className='text-3xl font-bold mb-16'>Wood Milling</div>
         <div className='max-w-[1200px] w-full pb-16'>
           <div className='grid grid-cols-2 gap-x-20'>
             <div className='flex justify-center items-center flex-col'>

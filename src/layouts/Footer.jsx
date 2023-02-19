@@ -33,7 +33,7 @@ const Footer = () => {
         <div className="mt-1 flex flex-col sm:mt-0 sm:flex-row sm:flex-wrap sm:space-x-6">
           <div className="mt-2 flex items-center text-lg text-gray-500 gap-4">
             <HiOutlineLocationMarker />
-          268 Dogwood Ln. Hoschton, GA 30548
+          Hoschton, GA
           </div>
         </div>
       </div>
