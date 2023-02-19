@@ -1,16 +1,11 @@
 import React from "react";
 import {MdOutlineEmail, MdOutlineLocationOn, MdPhone} from "react-icons/md";
-import {Link} from "react-router-dom";
+
 
 
 const Contact = () => {
   return (
     <>
-
-
-      <div name='contact' className='contactImg relative'>
-
-      </div>
 
       <div className='flex flex-col justify-center items-center mt-8 w-full h-full'>
 

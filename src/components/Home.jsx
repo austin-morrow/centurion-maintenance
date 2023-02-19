@@ -1,17 +1,9 @@
-import Logo from '../assets/brand/cm-logo.png';
 import React from "react";
-import {Link} from "react-router-dom";
-import Projects from '../components/Projects';
+import Projects from './Projects';
 
 export default function Home() {
   return (
     <>
-      <section name='home' className='coverImg'>
-        {/* Logo */}
-        <div className='max-w-[700px] 2xl:max-w-[600px] mx-auto px-20 pt-20 flex flex-col justify-center h-full'>
-          <img src={Logo} alt='logo' />
-        </div>
-      </section>
 
       <div className='mt-44 flex flex-col justify-center items-center w-full h-full'>
 
@@ -43,13 +35,6 @@ export default function Home() {
               </ul>
             </div>
             <span className="sm:ml-3 flex justify-center pt-20">
-          <Link to="/woodmilling"><button
-            type="button"
-
-            className="inline-flex items-center rounded-md border border-transparent bg-slate-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2"
-          >
-            See more Wood Milling
-          </button></Link>
         </span>
           </div>
           </div>
@@ -71,13 +56,6 @@ export default function Home() {
                 </ul>
               </div>
               <span className="sm:ml-3 flex justify-center pt-20">
-          <Link to="/residential"><button
-            type="button"
-
-            className="inline-flex items-center rounded-md border border-transparent bg-slate-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2"
-          >
-            See more Residential
-          </button></Link>
         </span>
             </div>
           </div>

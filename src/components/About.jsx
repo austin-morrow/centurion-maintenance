@@ -4,10 +4,6 @@ const About = () => {
   return (
     <>
 
-      <div name='home' className='aboutImg relative'>
-
-      </div>
-
       <div className="mt-8 mx-auto max-w-2xl sm:text-center">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">About Us</h2>
         <p className="mt-6 text-lg leading-8 text-gray-600">

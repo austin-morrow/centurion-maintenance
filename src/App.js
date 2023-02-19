@@ -1,26 +1,20 @@
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import Footer from '../src/layouts/Footer';
-import Navbar from './layouts/Navbar';
-//  Pages
-import Home from '../src/pages/Home';
-import About from '../src/pages/About';
-import WoodMilling from './pages/WoodMilling';
-import Contact from '../src/pages/Contact';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import About from './components/About';
+import Services from './components/Services';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <BrowserRouter>
-       <Navbar />
-      <main>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='about' element={<About />} />
-          <Route path='woodmilling' element={<WoodMilling />} />
-          <Route path='contact' element={<Contact />} />
-        </Routes>
-      </main>
+    <>
+      <Navbar />
+      <Home />
+      <About />
+      <Services />
+      <Contact />
       <Footer />
-    </BrowserRouter>
+    </>
   );
 }
 

@@ -1,5 +1,4 @@
 import logo from '../assets/brand/cm-logo.png';
-import {Link} from "react-router-dom";
 import React from "react";
 import { HiOutlineMail, HiPhone, HiOutlineLocationMarker } from "react-icons/hi";
 
@@ -14,7 +13,7 @@ const Footer = () => {
       <div className='max-w[1240px] items-center mx-auto grid grid-cols-2 md:grid-cols-3 border-b-2 border-gray-600 py-8'>
 
         <div>
-          <Link to='/'><img className='h-[175px] pl-10 lg:h-[175px]' src={logo} alt='Logo'/></Link>
+          <div><img className='h-[175px] pl-10 lg:h-[175px]' src={logo} alt='Logo'/></div>
         </div>
 
 

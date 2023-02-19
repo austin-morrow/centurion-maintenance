@@ -1,5 +1,4 @@
 import React from "react";
-import {Link} from "react-router-dom";
 import img1 from "../assets/images/IMG_5667.jpg";
 import img2 from "../assets/images/IMG_5666.jpg";
 import img3 from "../assets/images/IMG_5662.jpg";
@@ -40,13 +39,7 @@ export default function Home() {
     </div>
   </div>
   <span className="sm:ml-3 flex justify-center pt-10">
-          <Link to="/contact"><button
-            type="button"
 
-            className="inline-flex items-center rounded-md border border-transparent bg-white px-4 py-2 text-sm font-medium text-black shadow-sm hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2"
-          >
-            Contact for more information
-          </button></Link>
         </span>
 </div>
 
