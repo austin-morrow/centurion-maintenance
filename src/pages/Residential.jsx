@@ -5,12 +5,11 @@ const Residential = () => {
   return (
     <>
       <div name='home' className='residentialImg relative'>
-        <div>
-          <div className='text-white text-3xl absolute left-1/4 bottom-5'>Residential</div>
-        </div>
+
       </div>
 
-      <div className=" py-20 px-4 mt-8">
+      <div className=" py-100 px-4 mt-8">
+        <div className='text-3xl pb-10 flex justify-center'>Residential</div>
         <div className="mx-auto max-w-6xl flex flex-col md:flex-row">
           <h2 className="mr-8 w-full md:w-1/3 text-3xl font-extrabold leading-9">
             Our Services
