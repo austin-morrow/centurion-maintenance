@@ -11,35 +11,3 @@
 
 
 }
-
-.coverImg {
-    height: 100vh;
-    background: url(./assets/images/coverImg.jpg) no-repeat center/
-cover;
-}
-
-.woodMillingImg {
-    height: 50vh;
-    background: url(assets/images/woodmilling.jpg) no-repeat center/
-cover;
-}
-
-.residentialImg {
-    height: 50vh;
-    background: url(assets/images/residential.jpg) no-repeat center/
-cover;
-}
-
-.aboutImg {
-    height: 50vh;
-    background: url(assets/images/about3.jpg) no-repeat center/
-cover;
-    background-position-y: center;
-}
-
-.contactImg {
-    height: 50vh;
-    background: url(assets/images/contact.jpg) no-repeat center/
-cover;
-    background-position-y: inherit;
-}

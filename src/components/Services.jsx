@@ -1,78 +1,52 @@
-import React from 'react';
-import img1 from '../assets/images/IMG_5667.jpg';
-import img2 from '../assets/images/IMG_5662.jpg';
-import img3 from '../assets/images/IMG_5666.jpg';
+import Services from '../assets/images/services2.jpg'
 
-export default function Services() {
+const links = [
+  { name: 'Free Estimates', href: '#' },
+  { name: 'Mobile Sawmill', href: '#' },
+  { name: 'Our values', href: '#' },
+  { name: 'Meet our leadership', href: '#' },
+]
+const stats = [
+  { name: 'Offices worldwide', value: '12' },
+  { name: 'Full-time colleagues', value: '300+' },
+  { name: 'Hours per week', value: '40' },
+  { name: 'Paid time off', value: 'Unlimited' },
+]
+
+export default function Example() {
   return (
-    <>
-
-      <div className='mt-8 flex flex-col justify-center items-center w-full h-full'>
-        <div className='text-3xl font-bold mb-16'>Wood Milling</div>
-        <div className='max-w-[1200px] w-full pb-16'>
-          <div className='grid grid-cols-2 gap-x-20'>
-            <div className='flex justify-center items-center flex-col'>
-              <div className='text-left'>
-                <div className='text-2xl pb-4'>Heading</div>
-                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam distinctio earum expedita fugit
-                  impedit magni minima nam obcaecati odio optio perferendis provident quae qui quibusdam, quidem quis
-                  quo
-                  repellendus suscipit?
-                </div>
-                <span className="sm:ml-3 flex justify-center pt-20">
-
-        </span>
-              </div>
-            </div>
-            <div className='flex justify-center w-[500px]'>
-              <img src={img1} alt="Wood" className='rounded-lg'/>
-            </div>
-          </div>
+    <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+      <img
+        src={Services}
+        alt=""
+        className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
+      />
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl lg:mx-0">
+          <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Our Services</h2>
+          <p className="mt-6 text-lg leading-8 text-gray-300">
+            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
+            fugiat veniam occaecat fugiat aliqua.
+          </p>
         </div>
-
-        <div className='max-w-[1200px] w-full pb-16'>
-          <div className='grid grid-cols-2 gap-x-20'>
-            <div className='flex justify-center w-[500px]'>
-              <img src={img3} alt="Wood" className='rounded-lg'/>
-            </div>
-            <div className='flex justify-center items-center flex-col'>
-              <div className='text-left'>
-                <div className='text-2xl pb-4'>Heading</div>
-                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam distinctio earum expedita fugit
-                  impedit magni minima nam obcaecati odio optio perferendis provident quae qui quibusdam, quidem quis
-                  quo
-                  repellendus suscipit?
-                </div>
-                <span className="sm:ml-3 flex justify-center pt-20">
-
-        </span>
-              </div>
-            </div>
+        <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+          <div className="grid grid-cols-1 gap-y-6 gap-x-8 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
+            {links.map((link) => (
+              <a key={link.name} href={link.href}>
+                {link.name} <span aria-hidden="true">&rarr;</span>
+              </a>
+            ))}
           </div>
-        </div>
-
-        <div className='max-w-[1200px] w-full pb-16'>
-          <div className='grid grid-cols-2 gap-x-20'>
-            <div className='flex justify-center items-center flex-col'>
-              <div className='text-left'>
-                <div className='text-2xl pb-4'>Heading</div>
-                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam distinctio earum expedita fugit
-                  impedit magni minima nam obcaecati odio optio perferendis provident quae qui quibusdam, quidem quis
-                  quo
-                  repellendus suscipit?
-                </div>
-                <span className="sm:ml-3 flex justify-center pt-20">
-
-        </span>
+          <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+            {stats.map((stat) => (
+              <div key={stat.name} className="flex flex-col-reverse">
+                <dt className="text-base leading-7 text-gray-300">{stat.name}</dt>
+                <dd className="text-2xl font-bold leading-9 tracking-tight text-white">{stat.value}</dd>
               </div>
-            </div>
-            <div className='flex justify-center w-[500px]'>
-              <img src={img2} alt="Wood" className='rounded-lg'/>
-            </div>
-          </div>
+            ))}
+          </dl>
         </div>
-
       </div>
-    </>
+    </div>
   )
 }

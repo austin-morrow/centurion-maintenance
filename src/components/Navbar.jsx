@@ -1,36 +1,105 @@
-import React, { useState } from 'react';
-import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import { Disclosure } from '@headlessui/react'
+import Logo from '../assets/brand/cm-logo.png'
 
-const Navbar = () => {
-  const [nav, setNav] = useState(false);
+const navigation = [
+  { name: 'Services', href: '#', current: true },
+  { name: 'Projects', href: '#', current: false },
+  { name: 'About', href: '#', current: false },
+  { name: 'Contact', href: '#', current: false },
+]
 
-  const handleNav = () => {
-    setNav(!nav);
-  };
+function classNames(...classes) {
+  return classes.filter(Boolean).join(' ')
+}
 
+export default function Example() {
   return (
-    <div className='flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white'>
-      <h1 className='w-full text-3xl font-bold text-[#00df9a]'>REACT.</h1>
-      <ul className='hidden md:flex'>
-        <li className='p-4'>Home</li>
-        <li className='p-4'>Company</li>
-        <li className='p-4'>Resources</li>
-        <li className='p-4'>About</li>
-        <li className='p-4'>Contact</li>
-      </ul>
-      <div onClick={handleNav} className='block md:hidden'>
-        {nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20} />}
-      </div>
-      <ul className={nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500' : 'ease-in-out duration-500 fixed left-[-100%]'}>
-        <h1 className='w-full text-3xl font-bold text-[#00df9a] m-4'>REACT.</h1>
-        <li className='p-4 border-b border-gray-600'>Home</li>
-        <li className='p-4 border-b border-gray-600'>Company</li>
-        <li className='p-4 border-b border-gray-600'>Resources</li>
-        <li className='p-4 border-b border-gray-600'>About</li>
-        <li className='p-4'>Contact</li>
-      </ul>
-    </div>
-  );
-};
+    <>
+      {/*
+        This example requires updating your template:
 
-export default Navbar;
+        ```
+        <html class="h-full bg-gray-100">
+        <body class="h-full">
+        ```
+      */}
+      <div className="min-h-full">
+        <Disclosure as="nav" className="bg-gray-800">
+          {({ open }) => (
+            <>
+              <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div className="flex h-[150px] z-10 items-center justify-between">
+                  <div className="flex items-center">
+                    <div className="flex-shrink-0">
+                      <img
+                        className='h-[200px] pl-10 lg:h-[250px]'
+                        src={Logo}
+                        alt="Your Company"
+                      />
+                    </div>
+                    <div className="hidden md:block">
+                      <div className="ml-10 flex items-baseline space-x-4">
+                        {navigation.map((item) => (
+                          <a
+                            key={item.name}
+                            href={item.href}
+                            className={classNames(
+                              item.current
+                                ? 'bg-gray-900 text-white'
+                                : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                              'px-3 py-2 rounded-md text-sm font-medium'
+                            )}
+                            aria-current={item.current ? 'page' : undefined}
+                          >
+                            {item.name}
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="-mr-2 flex md:hidden">
+                    {/* Mobile menu button */}
+                    <Disclosure.Button className="inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                      <span className="sr-only">Open main menu</span>
+                      {open ? (
+                        <span className="material-symbols-outlined" aria-hidden="true">
+                        close
+                        </span>
+                      ) : (
+                        <span className="material-symbols-outlined block h-6 w-6" aria-hidden="true">
+                        menu
+                        </span>
+                      )}
+                    </Disclosure.Button>
+                  </div>
+                </div>
+              </div>
+
+              <Disclosure.Panel className="md:hidden">
+                <div className="space-y-1 px-2 pt-2 pb-3 sm:px-3">
+                  {navigation.map((item) => (
+                    <Disclosure.Button
+                      key={item.name}
+                      as="a"
+                      href={item.href}
+                      className={classNames(
+                        item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                        'block px-3 py-2 rounded-md text-base font-medium'
+                      )}
+                      aria-current={item.current ? 'page' : undefined}
+                    >
+                      {item.name}
+                    </Disclosure.Button>
+                  ))}
+                </div>
+
+              </Disclosure.Panel>
+            </>
+          )}
+        </Disclosure>
+
+      </div>
+    </>
+  )
+}
