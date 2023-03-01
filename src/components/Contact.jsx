@@ -13,8 +13,7 @@ const Contact = () => {
           <div className="pb-14 mx-auto max-w-2xl sm:text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Get in Touch</h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas
-            in. Explicabo id ut laborum.
+            We would love to talk with you about your next project
           </p>
         </div>
           <div className='grid grid-cols-3 gap-x-20'>
