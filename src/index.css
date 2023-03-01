@@ -9,5 +9,9 @@
         --secondary-orange: #CB7752;
     }
 
-
+.heroImg {
+    height: 100vh;
+    background: url(./assets/images/hero.jpg) no-repeat center/
+cover;
+    }
 }

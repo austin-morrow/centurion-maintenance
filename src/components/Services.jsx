@@ -3,11 +3,10 @@ import Services from '../assets/images/services2.jpg'
 const links = [
   { name: 'Free Estimates', href: '#' },
   { name: 'Mobile Sawmill', href: '#' },
-  { name: 'Our values', href: '#' },
-  { name: 'Meet our leadership', href: '#' },
+  { name: 'Indoor curring Environment', href: '#' },
 ]
 const stats = [
-  { name: 'Offices worldwide', value: '12' },
+  { name: 'Tree logs diameter', value: '16\'x34\'' },
   { name: 'Full-time colleagues', value: '300+' },
   { name: 'Hours per week', value: '40' },
   { name: 'Paid time off', value: 'Unlimited' },
