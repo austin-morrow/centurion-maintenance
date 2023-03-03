@@ -3,10 +3,10 @@ import { Disclosure } from '@headlessui/react'
 import Logo from '../assets/brand/cm-logo.png'
 
 const navigation = [
-  { name: 'About', href: '#', current: true },
-  { name: 'Services', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Contact', href: '#', current: false },
+  { name: 'ABOUT', href: '#', current: true },
+  { name: 'SERVICES', href: '#', current: false },
+  { name: 'OUR PROCESS', href: '#', current: false },
+  { name: 'CONTACT', href: '#', current: false },
 ]
 
 

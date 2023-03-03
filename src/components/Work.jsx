@@ -10,7 +10,7 @@ export default function Home() {
     <>
 <div className='w-full py-16 px-28 bg-[#181d18]'>
   <div className='pb-8 text-white text-3xl font-bold flex justify-center'>
-    <div>Recent Projects</div>
+    <div>Some of our recent work</div>
   </div>
   <div className='grid grid-cols-4 gap-6'>
     <div className='flex justify-center w-[300px]'>

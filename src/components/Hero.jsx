@@ -1,12 +1,11 @@
 import React from 'react';
-import { Link } from 'react-scroll';
-import { HiArrowNarrowRight } from 'react-icons/hi';
+
 
 
 const Hero = () => {
   return (
     <>
-      <section name='home' className='heroImg'>
+      <section name='home' className='heroImg drop-shadow-lg'>
 
 
         <div className='flex flex-col justify-center items-center w-full h-full'>

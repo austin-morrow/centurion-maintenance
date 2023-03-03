@@ -8,11 +8,15 @@ const Footer = () => {
       <div className='flex flex-col items-center max-w-[1240px] px-2 py-4 mx-auto justify-between sm:flex-row text-center text-[text-[#A8A899]'>
         <p className='py-4'>2023 Centurion Maintenance. All Rights Reserved</p>
         <div>
-          <img
-            className="h-6"
-            src={Logo}
-            alt="Your Company"
-          />
+
+          <a
+             href="https://austinmorrow.me" target="_blank" rel="noreferrer">
+            <img
+              className="h-6"
+              src={Logo}
+              alt="Your Company"
+            />
+          </a>
         </div>
       </div>
     </div>
