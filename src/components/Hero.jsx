@@ -15,12 +15,12 @@ const Hero = () => {
               <h2 className="text-3xl font-bold tracking-tight text-white sm:text-8xl">Quality Wood Milling</h2>
             </div>
           </div>
-          <div className='text-white text-2xl pt-16'>
-            SCROLL
-          </div>
-          <span className="material-symbols-outlined text-white pt-4">
-            south
-            </span>
+          {/*<div className='text-white text-2xl pt-16'>*/}
+          {/*  SCROLL*/}
+          {/*</div>*/}
+          {/*<span className="material-symbols-outlined text-white pt-4">*/}
+          {/*  south*/}
+          {/*  </span>*/}
         </div>
 
 

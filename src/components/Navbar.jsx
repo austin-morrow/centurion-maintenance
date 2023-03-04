@@ -1,20 +1,17 @@
 import React from "react";
 import { Disclosure } from '@headlessui/react'
+import { Link } from 'react-scroll';
 import Logo from '../assets/brand/cm-logo.png'
 
 const navigation = [
-  { name: 'ABOUT', href: '#', current: true },
-  { name: 'SERVICES', href: '#', current: false },
-  { name: 'WORK', href: '#', current: false },
-  { name: 'CONTACT', href: '#', current: false },
+  { name: 'ABOUT', to: 'about', current: true },
+  { name: 'SERVICES', to: 'services', current: false },
+  { name: 'WORK', to: 'work', current: false },
+  { name: 'CONTACT', to: 'contact', current: false },
 ]
 
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
-
-export default function Example() {
+export default function Navbar() {
   return (
     <>
       <div className="min-h-full">
@@ -38,19 +35,17 @@ export default function Example() {
 
                         <div className="ml-10 flex items-baseline space-x-4">
                           {navigation.map((item) => (
-                            <a
+                            <Link
                               key={item.name}
-                              href={item.href}
-                              className={classNames(
-                                item.current
-                                  ? 'bg-[#2C434D] text-white'
-                                  : 'text-[#6A6A5D] hover:bg-[#a8a899] hover:text-white',
-                                'rounded-md px-6 py-2 text-lg font-medium'
-                              )}
-                              aria-current={item.current ? 'page' : undefined}
+                              to={item.to}
+                              smooth={true}
+                              duration={500}
+                              className=
+                                  'text-[#6A6A5D] hover:bg-[#2C434D] hover:text-white cursor-pointer
+                                rounded-md px-6 py-2 text-lg font-medium'
                             >
                               {item.name}
-                            </a>
+                            </Link>
                           ))}
                         </div>
                       </div>
@@ -77,18 +72,17 @@ export default function Example() {
               <Disclosure.Panel className="md:hidden">
                 <div className="space-y-1 px-2 pt-2 pb-3 sm:px-3">
                   {navigation.map((item) => (
-                    <Disclosure.Button
+                    <Link
                       key={item.name}
                       as="a"
-                      href={item.href}
-                      className={classNames(
-                        item.current ? 'bg-[#2C434D] text-white' : 'text-[#6A6A5D] hover:bg-[#a8a899] hover:text-white',
-                        'block rounded-md px-3 py-2 text-base font-medium'
-                      )}
-                      aria-current={item.current ? 'page' : undefined}
+                      to={item.to}
+                      smooth={true}
+                      duration={500}
+                      className='text-[#6A6A5D] hover:bg-[#2C434D] hover:text-white
+                        block rounded-md px-3 py-2 text-base font-medium'
                     >
                       {item.name}
-                    </Disclosure.Button>
+                    </Link>
                   ))}
                 </div>
               </Disclosure.Panel>

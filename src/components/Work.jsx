@@ -7,6 +7,7 @@ import IMG5 from '../assets/images/IMG_5.jpg'
 import IMG6 from '../assets/images/IMG_6.jpg'
 import IMG7 from '../assets/images/IMG_7.jpg'
 import IMG8 from '../assets/images/IMG_8.jpg'
+import IMG9 from '../assets/images/IMG_9.jpg'
 
 const products = [
   {
@@ -49,16 +50,21 @@ const products = [
     imageSrc: IMG8,
     imageAlt: '',
   },
+  {
+    id: 9,
+    imageSrc: IMG9,
+    imageAlt: '',
+  },
 ]
 
 export default function Work() {
   return (
-    <div className="bg-[#2C434D]">
+    <div name='work' className="bg-[#2C434D]">
       <div className="mx-auto max-w-2xl px-4 sm:py-32 sm:px-6 lg:max-w-7xl lg:px-8">
         <div className="flex flex-col items-center" >
         <div className='pb-16 max-w-2xl'>
           <div className="flex justify-center">
-            <div className="relative flex w-3/12 items-center">
+            <div className="relative flex w-48 items-center">
               <div className="flex-grow border-t border-gray-400"></div>
               <span className="flex-shrink mx-4 text-gray-400">WORK</span>
               <div className="flex-grow border-t border-gray-400"></div>

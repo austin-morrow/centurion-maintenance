@@ -3,11 +3,11 @@ import React from "react";
 
 export default function Example() {
   return (
-    <div className="relative isolate overflow-hidden bg-white py-40 sm:py-40">
+    <div name='services' className="relative isolate overflow-hidden bg-white py-40 sm:py-40">
       <div className="grid grid-cols-2 mx-auto max-w-6xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl ">
           <div className='flex justify-center'>
-          <div className="relative flex w-3/12 py-5 items-center">
+          <div className="relative flex w-48 py-5 items-center">
             <div className="flex-grow border-t border-gray-400"></div>
             <span className="flex-shrink mx-4 text-gray-400">SERVICES</span>
             <div className="flex-grow border-t border-gray-400"></div>
