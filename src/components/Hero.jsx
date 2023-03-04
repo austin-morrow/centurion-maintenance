@@ -10,11 +10,17 @@ const Hero = () => {
 
         <div className='flex flex-col justify-center items-center w-full h-full'>
 
-          <div className='max-w-[1200px] w-full pb-16'>
+          <div className='max-w-[1200px] w-full pb-12'>
             <div className="pb-14 mx-auto sm:text-center flex justify-center">
               <h2 className="text-3xl font-bold tracking-tight text-white sm:text-8xl">Quality Wood Milling</h2>
             </div>
           </div>
+          <div className='text-white text-2xl pt-16'>
+            SCROLL
+          </div>
+          <span className="material-symbols-outlined text-white pt-4">
+            south
+            </span>
         </div>
 
 

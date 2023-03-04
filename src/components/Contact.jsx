@@ -7,16 +7,16 @@ const Contact = () => {
   return (
     <>
 
-      <div className='flex flex-col justify-center items-center mt-8 w-full h-full'>
+      <div className='flex flex-col justify-center items-center py-32 w-full h-full'>
 
         <div className='max-w-[1200px] w-full pb-16'>
           <div className="pb-14 mx-auto max-w-2xl sm:text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Get in Touch</h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            We would love to talk with you about your next project
+           READY TO START YOUR NEXT PROJECT? CONTACT US TODAY
           </p>
         </div>
-          <div className='grid grid-cols-3 gap-x-20'>
+          <div className='grid grid-cols-3 pt-16 gap-x-20'>
             <div className='flex flex-col justify-center'>
               <div className="mt-2 flex  justify-center items-center text-lg text-gray-500 gap-4">
                 <MdPhone />
