@@ -1,6 +1,7 @@
 {
   "name": "centurion-maintenance",
   "version": "0.1.0",
+  "homepage": "https://centurionmaintenance.com",
   "private": true,
   "dependencies": {
     "@headlessui/react": "^1.7.11",
