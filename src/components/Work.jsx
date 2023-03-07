@@ -60,7 +60,7 @@ const products = [
 export default function Work() {
   return (
     <div name='work' className="bg-[#2C434D]">
-      <div className="mx-auto max-w-2xl px-4 sm:py-32 sm:px-6 lg:max-w-7xl lg:px-8">
+      <div className="mx-auto max-w-2xl px-4 py-20 sm:py-32 sm:px-6 lg:max-w-7xl lg:px-8">
         <div className="flex flex-col items-center" >
         <div className='pb-16 max-w-2xl'>
           <div className="flex justify-center">
@@ -70,7 +70,7 @@ export default function Work() {
               <div className="flex-grow border-t border-gray-400"></div>
             </div>
           </div>
-          <div className='flex justify-center text-[#a8a899] font-medium text-4xl'>
+          <div className='flex justify-center  sm:flex-row text-center text-[#a8a899] font-medium text-4xl'>
             SOME OF OUR RECENT WORK
           </div>
           <p className="mt-8 font-light text-lg leading-loose text-white">
