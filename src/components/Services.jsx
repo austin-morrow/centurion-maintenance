@@ -19,8 +19,9 @@ export default function Example() {
           <ul className="mt-6 px-6 md:px-0 text-lg list-disc leading-8 text-gray-500">
             <li>Free estimates</li>
             <li>Mobile sawmill ripping timbers up to 16'x34" in diameter to preferred thickness</li>
+            <li>Select the timber of your choice and cut to your specifications</li>
             <li>Moving and organizing timbers on site</li>
-            <li>Available indoor temperature controlled timber curing.</li>
+            <li>Available indoor temperature controlled timber curing</li>
             <div className='list-none italic pt-10 text-sm '>
             <li>** Coming soon. Variety of cut timbers for your woodworking projects **</li>
             </div>
