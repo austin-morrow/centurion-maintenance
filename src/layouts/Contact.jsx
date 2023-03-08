@@ -8,7 +8,6 @@ const Contact = () => {
     <>
 
       <div name='contact' className='flex flex-col justify-center items-center py-20 sm:py-40 w-full h-full'>
-
         <div className='max-w-[1200px] w-full pb-16'>
           <div className="flex justify-center sm:flex-row">
             <div className="relative flex justify-center w-48 py-8 items-center">

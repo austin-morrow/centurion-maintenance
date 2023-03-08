@@ -1,10 +1,10 @@
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Services from './components/Services';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import Work from './components/Work';
+import Navbar from './layouts/Navbar';
+import Hero from './layouts/Hero';
+import About from './layouts/About';
+import Services from './layouts/Services';
+import Contact from './layouts/Contact';
+import Footer from './layouts/Footer';
+import Work from './layouts/Work';
 
 function App() {
   return (
