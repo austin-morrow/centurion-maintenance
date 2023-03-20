@@ -18,7 +18,7 @@ const About = () => {
             QUALITY WOOD MILLING
           </div>
         <p className="mt-8 font-light px-6 md:px-0 leading-loose text-white">
-        Centurion Maintenance Inc. began its journey in Denver, Colorado on October 3, 2001, with a focus on residential and commercial capital gain projects. Our journey lead us to Georgia on December 14, 2022, where are took a leap of faith by transitioning our focus to sawmill log ripping for residential customers. Our mission is to offer a wide selection of lumber to cater to future woodworking projects. With this new venture, we hope to deliver unparalleled quality and service to our customers.
+        Centurion Maintenance Inc. began its journey in Denver, Colorado on October 3, 2001, with a focus on residential and commercial capital gain projects. Our journey lead us to Georgia on December 14, 2022, where we took a leap of faith by transitioning our focus to sawmill timber ripping for residential customers. Our mission is to offer a wide selection of lumber to cater to future woodworking projects. With this new venture, we hope to deliver unparalleled quality and service to our customers.
         </p>
         </div>
       </div>
