@@ -49,7 +49,7 @@ export default function Example() {
       </div>
 
       {/* Available Timber */}
-      <div className="md:grid md:pt-20 sm:grid-cols-2 flex flex-col-reverse mx-auto max-w-6xl px-6 lg:px-8">
+      <div className="md:grid md:pt-20 pt-16 sm:grid-cols-2 flex flex-col-reverse mx-auto max-w-6xl px-6 lg:px-8">
         <div className="md:ml-16 pt-8 flex justify-center">
           <div className="flex justify-center w-[500px]">
             <img src={img1} alt="Wood" className="rounded-lg" />
