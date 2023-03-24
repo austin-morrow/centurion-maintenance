@@ -8,6 +8,7 @@ import IMG6 from '../assets/images/IMG_6.jpg'
 import IMG7 from '../assets/images/IMG_7.jpg'
 import IMG8 from '../assets/images/IMG_8.jpg'
 import IMG9 from '../assets/images/IMG_9.jpg'
+import IMG10 from '../assets/images/insured.jpg'
 
 const products = [
   {
@@ -55,6 +56,11 @@ const products = [
     imageSrc: IMG9,
     imageAlt: '',
   },
+  {
+    id: 10,
+    imageSrc: IMG10,
+    imageAlt: '',
+  }
 ]
 
 export default function Work() {
@@ -63,7 +69,7 @@ export default function Work() {
       <div className="mx-auto max-w-2xl px-4 py-20 sm:py-32 sm:px-6 lg:max-w-7xl lg:px-8">
         <div className="flex flex-col items-center" >
         <div className='pb-16 max-w-2xl'>
-          <div className="flex justify-center">
+          <div className="flex justify-center py-5">
             <div className="relative flex w-48 items-center">
               <div className="flex-grow border-t border-gray-400"></div>
               <span className="flex-shrink mx-4 text-gray-400">WORK</span>
