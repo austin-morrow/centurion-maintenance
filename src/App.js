@@ -5,6 +5,7 @@ import Services from './layouts/Services';
 import Contact from './layouts/Contact';
 import Footer from './layouts/Footer';
 import Work from './layouts/Work';
+import ScrollToTopButton from './components/ScrollToTopButton';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Services />
       <Work />
       <Contact />
+      <ScrollToTopButton />
       <Footer />
     </>
   );
